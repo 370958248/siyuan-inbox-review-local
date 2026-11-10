@@ -1,0 +1,153 @@
+.siyuan-inbox-review__toast {
+    position: fixed;
+    left: 44px;
+    bottom: 39px;
+    z-index: 12;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 4px;
+    border: 1px solid var(--b3-border-color);
+    border-radius: 8px;
+    background: var(--b3-theme-background);
+    color: var(--b3-theme-on-background);
+    box-shadow: var(--b3-point-shadow);
+}
+.siyuan-inbox-review__toast .b3-button { padding: 5px 9px; }
+.siyuan-inbox-review__close {
+    position: absolute;
+    z-index: 2;
+    top: 7px;
+    right: 12px;
+    padding: 2px 8px;
+    font-size: 18px;
+}
+.siyuan-inbox-review__dialog {
+    box-sizing: border-box;
+    display: grid;
+    gap: 12px;
+    max-height: min(78vh, 740px);
+    overflow: auto;
+    padding: 16px 20px;
+    color: var(--b3-theme-on-background);
+    overflow-wrap: anywhere;
+}
+.siyuan-inbox-review__dialog h3,
+.siyuan-inbox-review__dialog p { margin: 0; }
+.siyuan-inbox-review__dialog h3 { font-size: 17px; font-weight: 600; }
+.siyuan-inbox-review__muted { color: var(--b3-theme-on-surface); font-size: 13px; }
+.siyuan-inbox-review__preview {
+    display: grid;
+    gap: 8px;
+    border: 1px solid var(--b3-border-color);
+    border-radius: 8px;
+    padding: 12px 14px;
+    background: var(--b3-theme-surface);
+}
+.siyuan-inbox-review__preview > .siyuan-inbox-review__muted {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+}
+.siyuan-inbox-review__preview a { color: var(--b3-theme-primary); }
+.siyuan-inbox-review__preview-scroll {
+    box-sizing: border-box;
+    display: grid;
+    align-content: start;
+    gap: 8px;
+    height: clamp(104px, 26vh, 240px);
+    min-width: 0;
+    padding: 8px 10px;
+    overflow: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+    border: 1px solid var(--b3-border-color);
+    border-radius: 6px;
+}
+.siyuan-inbox-review__preview-tools,
+.siyuan-inbox-review__viewer-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.siyuan-inbox-review__copy {
+    display: grid;
+    gap: 7px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    line-height: 1.65;
+}
+.siyuan-inbox-review__copy[hidden] { display: none; }
+.siyuan-inbox-review__gallery { display: flex; gap: 8px; flex-wrap: wrap; }
+.siyuan-inbox-review__thumbnail {
+    box-sizing: border-box;
+    width: 78px;
+    height: 64px;
+    padding: 2px;
+    border: 1px solid var(--b3-border-color);
+}
+.siyuan-inbox-review__thumbnail img,
+.siyuan-inbox-review__image-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.siyuan-inbox-review__viewer { padding: 12px 16px 16px; }
+.siyuan-inbox-review__image-frame {
+    display: grid;
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+    place-items: center;
+    height: min(72vh, 850px);
+    overflow: hidden;
+    border-radius: 6px;
+    background: var(--b3-theme-surface);
+}
+.siyuan-inbox-review__viewer-controls {
+    justify-content: center;
+    padding-top: 12px;
+}
+.siyuan-inbox-review__viewer-controls a { color: var(--b3-theme-primary); }
+.siyuan-inbox-review__details > summary,
+.siyuan-inbox-review__tree summary { cursor: pointer; padding: 3px 0; }
+.siyuan-inbox-review__details[open] > summary { margin-bottom: 6px; }
+.siyuan-inbox-review__recommendation {
+    display: grid;
+    gap: 4px;
+    padding: 10px 14px;
+    border: 1px solid var(--b3-border-color);
+    border-left: 3px solid var(--b3-theme-primary);
+    border-radius: 6px;
+}
+.siyuan-inbox-review__recommendation strong { font-size: 15px; }
+.siyuan-inbox-review__tree,
+.siyuan-inbox-review__children { display: grid; gap: 4px; }
+.siyuan-inbox-review__children {
+    margin-left: 8px;
+    padding-left: 12px;
+    border-left: 1px solid var(--b3-border-color);
+}
+.siyuan-inbox-review__option {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 3px 0;
+    cursor: pointer;
+}
+.siyuan-inbox-review__option input { accent-color: var(--b3-theme-primary); }
+.siyuan-inbox-review__footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    padding: 10px 0 4px;
+    border-top: 1px solid var(--b3-border-color);
+    background: var(--b3-theme-background);
+}
+.siyuan-inbox-review__actions { display: flex; gap: 8px; margin-left: auto; }
+.siyuan-inbox-review__notice { padding: 5px 0; }
+

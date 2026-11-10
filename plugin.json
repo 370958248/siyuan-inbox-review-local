@@ -1,0 +1,30 @@
+{
+  "name": "siyuan-inbox-review-local",
+  "author": "370958248",
+  "url": "https://github.com/370958248/siyuan-inbox-review-local",
+  "version": "1.0.3",
+  "minAppVersion": "3.8.9",
+  "backends": [
+    "all"
+  ],
+  "frontends": [
+    "desktop",
+    "browser-desktop"
+  ],
+  "disabledInPublish": true,
+  "displayName": {
+    "default": "收集箱整理",
+    "zh-CN": "收集箱整理"
+  },
+  "description": {
+    "default": "收集箱攒了很多条？打开思源时轻轻提醒，有空就预览一条、归档一条。",
+    "zh-CN": "收集箱攒了很多条？打开思源时轻轻提醒，有空就预览一条、归档一条。"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh-CN": "README.md"
+  },
+  "icon": "icon.png",
+  "preview": "preview.png",
+  "keywords": ["收集箱", "收藏", "归档", "微信", "inbox"]
+}
